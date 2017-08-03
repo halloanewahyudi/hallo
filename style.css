@@ -1,0 +1,259 @@
+/* ANE WAHYUDI */
+/* WEBSITE ANE
+di buat pada saat abis lebaran
+*/
+@font-face {
+  font-family: "mon-r";
+  src: url("fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"),
+  url("fonts/montserrat/montserrat-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "mon-b";
+  src: url("fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"),
+  url("fonts/montserrat/montserrat-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* libre baskerville */
+@font-face {
+  font-family: "lib-r";
+  src: url("fonts/librebaskerville/librebaskerville-regular-webfont.woff2") format("woff2"),
+  url("fonts/librebaskerville/librebaskerville-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "lib-i";
+  src: url("fonts/librebaskerville/librebaskerville-italic-webfont.woff2") format("woff2"),
+  url("fonts/librebaskerville/librebaskerville-italic-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "lib-b";
+  src: url("fonts/librebaskerville/librebaskerville-bold-webfont.woff2") format("woff2"),
+  url("fonts/librebaskerville/librebaskerville-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "abril";
+  src: url("fonts/AbrilFatface-Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+html {font-size: 1em;}
+
+body {
+  font-family: 'lib-r', serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  font-family: mon-b;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+
+}
+
+h2 {font-size: 2.369em;}
+
+h3 {font-size: 1.777em;}
+
+h4 {font-size: 1.333em;}
+
+small, .font_small {font-size: 0.75em;}
+
+.no-gutter ['class*=col-'], .no-gutter ['class^=col-']{
+  padding: 0;
+  margin: 0;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2A3258;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+}
+
+.loaded {
+  width: 190px;
+  height: 90px;
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 30%;
+  margin: 0 auto;
+}
+.loaded img{
+  width: 100%;
+  height: auto;
+  animation-name: rotateIn;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.navbar{
+  -webkit-box-shadow: 3px 0px 10px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 3px 0px 10px 0px rgba(0,0,0,0.2);
+box-shadow: 3px 0px 10px 0px rgba(0,0,0,0.2);
+
+font-family: mon-r;
+}
+.navbar-nav > li> a{
+  font-size: 14px;
+}
+.logo{
+}
+.logo img{
+  width: 50px;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+   position: fixed;
+   z-index: -10;
+}
+.cover-box{
+
+}
+.easing{
+  -moz-transform:all .50s;
+  -webkit-transform:all .50s;
+  transform:all .50s;
+}
+.slide{
+position: absolute;
+width: 100%;
+height: 100%;
+top:0;
+right:0;
+bottom:0;
+left:0;
+}
+
+.slide-box{
+  width: 100%;
+  height: 100%;
+}
+#slide1.slide{
+  background: url('images/bg4.jpg')no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+
+}
+#slide2.slide{
+  text-align: center;
+  background: #DAD8DB;
+  color: #466;
+  z-index: 90;
+}
+#slide2 [class*='ion'],#slide2 [class^='ion']{
+  font-size: 40px;
+  color: #EF481B;
+
+  /*animation-name: zoomIn;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  */
+}
+#slide2 .col-md-4{
+  height: 100vh;
+  border-right: 1px solid #f4f4f4;
+  vertical-align: middle;
+  padding-top:200px;
+}
+#slide2 .service-item{
+
+}
+
+#slide2 .col-md-4:first-child{
+  border-left: 1px solid #f4f4f4;
+}
+
+  .design{
+  padding-top: 1400px;
+    background-position: -120px 100px;
+  }
+  .design-box{
+      padding: 120px 0;
+  }
+  @media(max-width:990px){
+    .design{
+    background-position: -420px 100px;
+      background-attachment: fixed;
+    }
+  }
+
+.coding{
+  padding: 120px 0;
+  background: url('images/d-coding.png') no-repeat 700px 100px;
+  background-attachment: fixed;
+}
+@media(max-width:990px){
+  .coding{
+    background: url('images/d-coding.png') no-repeat 400px 200px;
+    background-attachment: fixed;
+  }
+}
+
+.design-box,.coding-box{
+
+}
+
+.scene {
+  padding: 40px;
+  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.scene img{
+  max-width: 100%;
+  height: auto;
+}
+
+.description{
+  color: #EF481B;
+  font-family: 'abril',serif;
+  padding-top: 100px;
+  font-size: 20px;
+  text-align: center;
+
+  }
+.description h1{
+  font-family: lib-i;
+  font-size: 50px;
+  color: #2A3258;
+  margin-bottom: 10px;
+}
+
+.hp{
+  padding-top: 200px;
+  margin-left: 30px;
+}
